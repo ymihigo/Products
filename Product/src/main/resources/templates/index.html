@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymelyf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>New Product</title>
+</head>
+<body>
+	<center>
+	<h1>New Product</h1>
+	<form th:action="@{/save}" method="post" enctype="multipart/form-data">
+	<label>Product name :</label> <input type="text" name="proname" required=""></br></br>
+	<label>Product Description :</label> <input type="text" name="prodescription" required=""></br></br>
+	<label>Product price :</label> <input type="text" name="proprice" required=""></br></br>
+	<label>Select Product:</label> <input type="file" name="filez" id="filez" required=""accept="image/png, image/jpeg"></br></br>
+	<button type="submit">Save</button>   <button type="reset">Reset</button>
+	</form>
+	</center>
+</body>
+</html>
